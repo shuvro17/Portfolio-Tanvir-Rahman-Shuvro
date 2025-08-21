@@ -404,3 +404,70 @@ footer {
 .dark-mode .achievement-icon {
     color: #00aaff;
 }
+
+
+/* Dark mode adjustments */
+/* Dark mode adjustments */
+/* Contact Section */
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-width: 250px;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: #0066ff;
+}
+
+.contact-card p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-card a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: #0066ff;
+}
+
+/* Dark Mode */
+.dark-mode .contact-card {
+    background: #1e1e1e;
+    color: #eee;
+}
+
+.dark-mode .contact-icon {
+    color: #00aaff;
+}
+
+.dark-mode .contact-card a {
+    color: #eee;
+}
+
+.dark-mode .contact-card a:hover {
+    color: #00aaff;
+}
