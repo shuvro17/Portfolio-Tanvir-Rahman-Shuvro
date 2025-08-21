@@ -395,7 +395,7 @@ footer {
     margin: 0;
 }
 
-/* Dark mode adjustments */
+/* Dark mode adjustments for Achievements */
 .dark-mode .achievement-card {
     background: #1e1e1e;
     color: #eee;
@@ -403,6 +403,27 @@ footer {
 
 .dark-mode .achievement-icon {
     color: #00aaff;
+}
+
+.dark-mode .achievement-card p,
+.dark-mode .achievement-content {
+    color: #ddd;
+}
+
+/* Optional: Hover effect in dark mode */
+.dark-mode .achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,170,255,0.2);
+}
+
+/* If you have links in achievements */
+.dark-mode .achievement-card a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.dark-mode .achievement-card a:hover {
+    text-decoration: underline;
 }
 
 
@@ -496,7 +517,7 @@ footer {
 
 .publication-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0,170,255,0.2);
 }
 
 /* Publication Image */
@@ -587,8 +608,8 @@ footer {
 }
 
 #lightbox img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 50%;
+    max-height: 50%;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     animation: zoomIn 0.3s ease;
