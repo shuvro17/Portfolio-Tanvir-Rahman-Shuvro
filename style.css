@@ -471,3 +471,130 @@ footer {
 .dark-mode .contact-card a:hover {
     color: #00aaff;
 }
+
+
+/* Publications Grid */
+.publications-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+/* Individual Publication Card */
+.publication-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-wrap: wrap; /* responsive for small screens */
+}
+
+.publication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Publication Image */
+.pub-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Publication Content */
+.pub-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #0066ff;
+}
+
+.pub-content p {
+    margin: 0 0 15px;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #0066ff;
+    border-radius: 25px;
+    color: #0066ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #0066ff;
+    color: #fff;
+}
+
+/* Dark Mode */
+.dark-mode .publication-card {
+    background: #1e1e1e;
+    color: #eee;
+}
+
+.dark-mode .pub-content p {
+    color: #ddd;
+}
+
+.dark-mode .btn-secondary {
+    border-color: #00aaff;
+    color: #00aaff;
+}
+
+.dark-mode .btn-secondary:hover {
+    background: #00aaff;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .publication-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pub-image {
+        margin-bottom: 15px;
+    }
+}
+
+/* Lightbox Overlay */
+#lightbox {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#lightbox img {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
